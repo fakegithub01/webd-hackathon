@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>index2</title>
+    <style>
+        .aaa{
+            position: fixed;
+            top: 0;
+            z-index: 1;
+            width: 100%;
+            
+        }
+        body {
+            margin: 100px 0px;
+            font-family: Arial, sans-serif;
+            background-image: url(".h1.1.jpg"); 
+            background-size: cover; 
+            background-repeat: no-repeat;
+        }
+        nav {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-wrap: wrap;
+            background-color: #f2f2f2;
+            padding: 10px 0;
+        }
+        nav div {
+            margin: 5px;
+        }
+        nav div:nth-child(2) {
+            flex-grow: 1;
+            text-align: center;
+        }
+        nav a {
+            text-decoration: none;
+            margin: 0 10px;
+            color: #333;
+        }
+        nav a:hover {
+            color: #555;
+            text-decoration: underline;
+        }
+        nav button {
+            padding: 8px 16px;
+            border: none;
+            background-color: red;
+            color:white;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            border-radius: 19px;
+        }
+        nav button:hover {
+            background-color: rgba(255, 0, 0, 0.664);
+        }
+        .a1{
+            padding: 8px 16px;
+            border: none;
+            background-color: red;
+            color:white;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            border-radius: 19px;
+        }
+        .a2{
+            padding: 8px 16px;
+            border: none;
+            background-color: #ffa500;
+            color:black;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            border-radius: 19px;
+        }
+        .containabc{
+            padding: 8px 16px;
+            border: none;
+            background-color: red;
+            color:black;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            border-radius: 19px;
+        }
+        
+        .content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0;
+            background-color: #ffa500;
+        }
+        .left-half,
+        .right-half {
+            padding: 50px;
+            flex: 1;
+    
+        }
+        .left-half {
+            padding-right: 20px;
+        }
+        .one h1,
+        .one p,
+        .one button {
+            margin-bottom: 10px;
+        }
+        header img {
+            max-width: 100%;
+            height: auto;
+            max-height: 300px;
+        }
+
+        
+        .top-container,
+        .bottom-container {
+            background-color: white;
+            text-align: center;
+            padding: 0;
+            margin: 0;
+        }
+
+        
+        .bottom-container .three {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .bottom-container .three .left-half,
+        .bottom-container .three .right-half {
+            flex: 1;
+            padding: 10px;
+        }
+
+        .bottom-container .three img {
+            max-width: 100%;
+            height: auto;
+            max-height: 300px;
+        }
+
+        /*.bottom-container .three .left-half img{
+            height: 900px;
+        }
+
+        .bottom-container .three .right-half img{
+            height: 500px;
+        }*/
+        
+        
+        .contain {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+            background-color: #ffa500;
+          }
+      
+          .box {
+            background-color: white;
+            color: black;
+            padding: 20px;
+            margin: 10px;
+            height: 300px;
+            width: 200px;
+          }
+        .fourth{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50vh;
+            background-color: grey;
+        }
+        .b{
+            background-color: transparent;
+            color: whitesmoke;
+            padding: 20px;
+            margin: 10px;
+            height: 100px;
+            width: 200px;
+            
+        }
+        
+        .fife{
+            background-color: whitesmoke;
+        }
+        .sixth{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            height: 50px;
+            
+        }
+
+        .on {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 1000px; 
+            margin: 50px 100px;
+          
+           
+        }
+    
+        
+        .on img {
+          width: 250px; 
+          height: auto;
+        }
+        .tw{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 1000px; 
+            margin: 50px 100px;
+        }
+        .tw img{
+            width: 250px; 
+          height: auto;
+        }
+        html{
+            scroll-behavior: smooth;
+            scroll-padding-top: 100px;
+        }
+        .chefs {
+            background-color: #ffa500; 
+            padding: 50px;
+            text-align: center;
+        }
+
+        .chefs h3 {
+            font-size: 24px;
+            background-color: #ffa500;
+            color: #333;
+        }
+
+        .chefs h1 {
+            font-size: 36px;
+            background-color: #ffa500;
+            color: #555;
+        }
+        .chefsonee{
+            background-color: #ffa500;
+            width: 100%;
+        }
+        .chefstwo {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: #ffa500;
+        }
+
+        
+
+        .chef img {
+            width: 400px;
+            height: 400px;
+            background-color: #ffa500;
+            
+        }
+
+        .chef h4 {
+            font-size: 20px;  
+            background-color: #ffa500;
+        }
+
+        .chef p {
+            font-style: italic;
+            color: black;
+            background-color: #ffa500;
+        }
+        .chefs{
+            background-color: #ffa500;
+        }
+        
+    </style>
+</head>
+<body>
+    <nav class="aaa">
+        <div ><h3>Lorem ipsum</h3></div>
+        <div>
+            <a href="#sec1">Home</a>
+            <a href="#sec2">About</a>
+            <a href="#sec3">Menu</a>
+            <a href="">Events</a>
+            <a href="#aan">Chefs</a>
+            <a href="">Gallery</a>
+            <a href="">Dropdown</a>
+            <a href="">Contact</a>
+        </div>
+        <div>
+            <button>Book a table</button>
+        </div>
+    </nav>
+    <header>
+        <div class="content" id="sec1">
+            <div class="one left-half">
+                <h1>Lorem Ipsum</h1>
+                <p>Sed autumn laudatium dolores. Voluptatem itaque ea consequator <br> evenient. Eum quas beatae cumque eum quaerat.</p>
+                <br>
+                <button class="a1">Book a Table</button>
+                <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" ><button class="a2">Watch Video </button></a>
+            </div>
+            <div class="right-half">
+                <img src="h1.1.jpg" alt="">
+            </div>
+        </div>
+    </header>
+    <div class="top-container" id="sec2">
+        <div class="two">
+            <p>ABOUT US</p>
+            <h1>LEARN MORE ABOUT US</h1>
+        </div>
+    </div>
+    <header>
+        <div class="bottom-container" >
+            <div class="three">
+                <div class="left-half">
+                    <img src="h2.1.jpg" alt="">
+                </div>
+                <div class="right-half">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae corporis nisi fugiat molestias delectus impedit, quis id eos ipsam iusto vel ipsa dignissimos exercitationem soluta voluptatibus eaque! Totam, facere animi.</p>
+                    <img src="h2.2.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </header>
+    
+        <div class="contain" >
+            <div class="box"><h2>Why to choose lorem ipsum </h2><p>well it has bla bla bla  bla .. different benefits 4 u which will make u rich</p><button class="containabc">learn more 4 bore</button></div>
+            <div class="box"><h2>Corpotis heostic aseben shehend </h2><p>hesin ndsel ldnso sedno deoss dnneos owddls eiodn dsoen</p></div>
+            <div class="box"><h2>Ullmaco laboris ladore pan</h2><p>this is shds bin arman bin salman bin tublak bin khaan bin mohmd bin aslm bin r2h</p></div>
+            <div class="box"><h2>Labore consequator  incidid black dyne</h2><p>ek baar ki baat s ek ghra bhitrr ek kaal okawwo rhya krto usn fes int he form of devil ghost bhoot chudail dyne anabela</p></div>
+        </div>
+
+        <div class="fourth">
+            <div class="b"><h2>232</h2><h3>CLIENTS</h3></div>
+            <div class="b"><h2>521</h2><h3>PROJECTS</h3></div>
+            <div class="b"><h2>1453</h2><h3>HOURS OF SUPPORT</h3></div>
+            <div class="b"><h2>32</h2><h3>WORKERS</h3></div>
+        </div>
+        <div class="fife" id="sec3">
+            <div class="fifth">
+                <nav><h5>OUR MENU</h5></nav>
+                <nav><h1>CHECK OUR LOREM_IPSUM MENU</h1></nav>   
+            </div>
+
+            <div class="sixth">
+                <a href="#blablabla">Starters</a>
+                <a href="#blablabla">Breakfast</a>
+                <a href="#blablabla">Lunch</a>
+                <a href="#blablabla">Dinner</a>
+            </div>
+            
+            <div class="seventh">
+                <nav><p>MENU STARTERS</p></nav>
+                <nav><h2>STARTERS</h2></nav>
+            </div> 
+            
+            <div class="eighth">
+                <img src="" alt="">
+            </div>
+
+            <div class="image-box" id="blablabla">
+                <div class="on">
+                    <div><img src="menu3.png" alt="Placeholder Image">
+                        <h2>Magnam Tiste</h2><p>Lorem, deren.trataro,sdfds,djfhd</p><h1>$5.95</h1></div> 
+                    <div><img src="menu1.png" alt=""><h2>Aut Luia</h2><p>Lorem,deron,felode, neurl</p><h1>$14.95</h1></div>
+                    <div><img src="menu2.png" alt=""><h2>Est zeligendi</h2><p>:Lorem, deren.trataro,flade, sijfs</p><h1>$8.95</h1></div>
+                </div>
+                <div class="tw">
+                    <div><img src="menu4.png" alt=""><h2>Euis Luibusdan</h2><p>Lorem, deren, flana, dhikda,newadas</p><h1>$12.95</h1></div>
+                    <div><img src="menu5.png" alt=""><h2>Laboriosam Direva</h2><p>Lerom, dreon, blablabla, huaaaa</p><h1>$9.95</h1></div>
+                    <div><img src="menu6.png" alt=""><h2>Eous Luibusdan</h2><p>Lorem, deren, flana, dhikda,newadas</p><h1>$99.95</h1></div>
+                </div>
+              </div>
+
+        </div>
+        <div class="events">
+            <div class="eventsone">
+                <nav><h3>EVENTS</h3></nav>
+                <nav><h1>SHARE YOUR MOMENTS IN OUR RESTAURANT</h1></nav>
+            </div>
+            <div class="eventstwo">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+            </div>
+        </div>
+
+        <div class="chefs" id="aan">
+            <div class="chefsonee">
+                
+                    <h3>CHEFS</h3>
+                
+                
+                    <h1>OUR PROFESSIONAL CHEFS</h1>
+                
+            </div>
+            <div class="chefstwo">
+                <div class="chef">
+                    <img src="chefs-1.jpg" alt="Chef 1">
+                    <h4>Walter white</h4>
+                    <p>Main Chef ksdfdsfdcdklcc dcnk cdnco  d</p>
+                </div>
+                <div class="chef">
+                    <img src="chefs-2.jpg" alt="Chef 2">
+                    <h4>Sarah Jhonson</h4>
+                    <p>Sous Chef dvhd df ds dc ds</p>
+                </div>
+                <div class="chef">
+                    <img src="chefs-3.jpg" alt="Chef 3">
+                    <h4>William Enderson</h4>
+                    <p>Pastry Chef dsfds dc sdc d ddvdsfdsfs sdds</p>
+                </div>
+            </div>
+        </div>
+
+
+</body>
+</html>
+
